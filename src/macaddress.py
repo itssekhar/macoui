@@ -67,7 +67,7 @@ class MacAddress(object):
                 self.log.warning("No OUI entry exists for the given mac address")
 
         return vendor_name
-
+    #validate mac 
     def validate_mac(self, macaddress):
 
         if re.match("[0-9a-f]{2}([-:]?)[0-9a-f]{2}(\\1[0-9a-f]{2}){4}$", macaddress.lower()):
